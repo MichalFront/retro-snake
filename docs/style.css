@@ -88,3 +88,59 @@ body {
   #logo {
     position: absolute;
   }
+
+  @media only screen and (max-width: 768px) {
+    #game-board {
+      border-radius: 10px;
+      grid-template-columns: repeat(15, 20px);
+      grid-template-rows: repeat(20, 20px);
+      margin: 5px;
+    }
+
+    .game-border-1 {
+      border: #595f43 solid 1px;
+      border-radius: 30px;
+      box-shadow: inset 0 0 0 10px #595f43;
+    }
+
+    .game-border-2 {
+      border: #abb78a solid 1px;
+      border-radius: 26px;
+      box-shadow: inset 0 0 0 10px #abb78a;
+    }
+
+    .game-border-3 {
+      border: #8b966c solid 1px;
+      border-radius: 20px;
+      box-shadow: inset 0 0 0 5px #8b966c;
+    }
+
+    #instruction-text {
+      top: 60%;
+      width: 50vw;
+      padding: 30px;
+      font-size: 30px;
+      background-color: #8a8989;
+    }
+
+
+    #score,
+    #highScore {
+      font-size: 10px;
+      font-weight: bolder;
+      margin: 10px 0;
+    }
+
+    .snake {
+      border: #5a5a5a 1px dotted;
+    }
+
+    .food {
+      background-color: #dedede;
+      border: #999 5px solid;
+    }
+
+    #logo {
+      position: absolute;
+    }
+  }
